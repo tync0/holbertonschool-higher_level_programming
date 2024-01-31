@@ -1,10 +1,7 @@
 #!/usr/bin/python3
-square_matrix_simple = __import__('0-square_matrix_simple').square_matrix_simple
+only_diff_elements = __import__('4-only_diff_elements').only_diff_elements
 
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
-
-square_matrix_simple(matrix)
+set_1 = { "Python", "C", "Javascript" }
+set_2 = { "Bash", "C", "Ruby", "Perl" }
+od_set = only_diff_elements(set_1, set_2)
+print(sorted(list(od_set)))
