@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uniq_add(my_list=[]):
-    tuple(my_list)
+    new = set(my_list)
     cem = 0
-    for i in tuple:
+    for i in new:
         cem += i
     return cem
