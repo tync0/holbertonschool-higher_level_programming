@@ -2,9 +2,9 @@
 def safe_print_list(my_list=[], x=0):
     try:
         a = 0
-        for i in range(x):
+        for i in range(0, x):
             print(my_list[i], end="")
-            count++
+            a += 1
     except IndexError:
         pass
     finally:
