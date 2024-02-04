@@ -15,8 +15,9 @@ def text_indentation(text):
     for i in range(len(txt)):
         if txt[i] in [".", "?", ":"]:
             print(txt[i])
-            if txt[i + 1] == " ":
-                txt[i + 1] = ""
             print()
+            if i != len(txt) - 1:
+                if txt[i + 1] == " ":
+                    txt[i + 1] = ""
             continue
         print(txt[i], end="")
