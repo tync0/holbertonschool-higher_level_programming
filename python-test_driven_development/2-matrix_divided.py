@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+
+"""
+    This module contain a function: matrix_divided
+"""
+
 def matrix_divided(matrix, div):
+    """
+        matrix_divided - This function divides all
+        elements of a matrix.
+    """
+
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
     if div == 0:
