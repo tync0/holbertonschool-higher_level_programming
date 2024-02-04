@@ -12,7 +12,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-1, -3, -4, -2]), -1)
 
     def test_empty(self):
-        self.assertEqual(max_integer([]))
+        self.assertIsNone(max_integer([]))
     
     def test_one_number(self):
         self.assertEqual(max_integer([2]), 2)
