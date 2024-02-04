@@ -4,6 +4,7 @@
     This module contain a function: matrix_divided
 """
 
+
 def matrix_divided(matrix, div):
     """
         matrix_divided - This function divides all
