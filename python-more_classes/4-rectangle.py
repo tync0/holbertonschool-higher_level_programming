@@ -16,6 +16,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
         self.__width = width
         self.__height = height
+
     @property
     def width(self):
         return self.__width
@@ -47,7 +48,7 @@ class Rectangle:
         if self.width == 0 or self.height == 0:
             return 0
         return 2 * (self.width + self.height)
-    
+
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ("")
@@ -58,6 +59,6 @@ class Rectangle:
             if not i == self.height - 1:
                 new += "\n"
         return new
-    
+
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
