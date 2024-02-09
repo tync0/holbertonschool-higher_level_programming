@@ -1,3 +1,8 @@
 #!/usr/bin/python3
+
+"""Module doc"""
+
+
 def lookup(obj):
-    dir(obj)
+    """Doc of function"""
+    return dir(obj)
