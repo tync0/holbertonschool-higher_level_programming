@@ -1,8 +1,4 @@
-#!/usr/bin/python3
-
-
 """Documented Module"""
-
 
 import json
 
