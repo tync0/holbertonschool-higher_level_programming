@@ -35,5 +35,6 @@ class Base:
         return "[]"
 
     def save_to_file(cls, list_objs):
+        """"""
         with open(cls, "w") as f:
             json.dump(list_objs, f)
