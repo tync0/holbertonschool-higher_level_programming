@@ -38,6 +38,7 @@ class Base:
             return json.dumps(list_dictionaries)
         return "[]"
 
+    @classmethod
     def save_to_file(cls, list_objs):
         """Saves a list of objects to a JSON file.
 
