@@ -82,5 +82,5 @@ class Rectangle(Base):
         """Display the rectangle by printing it to the console."""
         for i in range(self.height):
             for j in range(self.width):
-                print("#")
+                print("#", end="")
             print()
