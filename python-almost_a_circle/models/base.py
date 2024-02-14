@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Represents the Base class."""
+
+
 class Base:
     """Represents the Base class.
 
