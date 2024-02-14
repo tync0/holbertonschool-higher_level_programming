@@ -80,7 +80,7 @@ class Rectangle(Base):
 
     def display(self):
         """Display the rectangle by printing it to the console."""
-        for _ in self.height:
-            for __ in self.width:
+        for i in self.height:
+            for j in self.width:
                 print("#")
             print()
