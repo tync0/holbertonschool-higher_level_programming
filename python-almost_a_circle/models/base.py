@@ -38,6 +38,17 @@ class Base:
             return json.dumps(list_dictionaries)
         return "[]"
 
+    @staticmethod
+    def from_json_string(json_string):
+        """Convert a JSON string to a list.
+
+        Args:
+            json_string (str): A JSON string.
+        """
+        if not json_string:
+            return []
+        return json.loads(json_string)
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Saves a list of objects to a JSON file.
