@@ -96,6 +96,6 @@ class Rectangle(Base):
 
     def update(self, *args):
         """Update the values of rectangle."""
-        a = [self.id, self.width, self.height, self.x, self.y]
+        a = ["id", "width", "height", "x", "y"]
         for i in range(len(args)):
             setattr(self, a[i], args[i])
