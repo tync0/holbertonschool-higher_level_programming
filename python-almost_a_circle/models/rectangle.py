@@ -16,7 +16,7 @@ class Rectangle(Base):
             y (int): The y coordinate of the Rectangle.
             id (int): The identity of the new Rectangle.
         """
-        super.__init__(id)
+        super().__init__(id)
         self.__width = width
         self.__height = height
         self.__x = x
