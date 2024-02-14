@@ -93,3 +93,9 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height
         )
+
+    def update(self, *args):
+        """Update the values of rectangle."""
+        a = [self.id, self.width, self.height, self.x, self.y]
+        for i in range(len(args)):
+            setattr(self, a[i], args[i])
