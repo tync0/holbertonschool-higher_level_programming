@@ -96,7 +96,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update the values of rectangle."""
-        if not args:
+        if args:
             a = ["id", "width", "height", "x", "y"]
             for i in range(len(args)):
                 setattr(self, a[i], args[i])
