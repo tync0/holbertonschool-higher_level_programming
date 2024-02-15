@@ -2,6 +2,7 @@
 """Represents the Base class."""
 
 import json
+import os
 
 
 class Base:
@@ -80,3 +81,23 @@ class Base:
             dummy = cls(1)
         dummy.update(**dictionary)
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Loads instances from a JSON file and returns a list of instances.
+
+        Returns:
+            list: A list of instances loaded from the JSON file.
+        """
+        filename = "{}.json".format(cls.__name__)
+        if not os.path.isfile(filename):
+            return []
+        with open(filename, "r", encoding="utf-8") as f:
+            json_str = f.read()
+            list_from_json = cls.from_json_string(json_str)
+            new = []
+            for i in list_from_json:
+                a = cls.create(i)
+                new.append(a)
+            return new
