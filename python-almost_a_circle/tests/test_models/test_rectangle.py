@@ -48,12 +48,12 @@ class TestBase(unittest.TestCase):
             Rectangle(1, 2, 3, -4)
 
     def test_area(self):
-        r0 = Rectangle(3, 4)
-        self.assertEqual(r0.area(), 12)
+        r0 = Rectangle(1, 2)
+        self.assertEqual(r0.area(), 2)
 
     def test_str(self):
-        r0 = Rectangle(1, 2, id=5)
-        self.assertEqual(str(r0), "[Rectangle] (5) 0/0 - 1/2")
+        r0 = Rectangle(1, 2, id=66)
+        self.assertEqual(str(r0), "[Rectangle] (66) 0/0 - 1/2")
 
     def test_display1(self):
         r0 = Rectangle(2, 5)
@@ -168,3 +168,7 @@ class TestBase(unittest.TestCase):
         out = Rectangle.load_from_file()
 
         self.assertEqual(inp[0].__str__(), out[0].__str__())
+
+
+if __name__ == "__main__":
+    unittest.main()
