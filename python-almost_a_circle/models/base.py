@@ -98,6 +98,6 @@ class Base:
             list_from_json = cls.from_json_string(json_str)
             new = []
             for i in list_from_json:
-                a = cls.create(i)
+                a = cls.create(**i)
                 new.append(a)
             return new
