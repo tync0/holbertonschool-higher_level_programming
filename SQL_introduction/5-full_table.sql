@@ -1,2 +1,2 @@
--- Print full table
-SHOW COLUMNS FROM hbtn_0c_0.first_table;
+-- Full description
+SHOW CREATE TABLE `first_table`;
